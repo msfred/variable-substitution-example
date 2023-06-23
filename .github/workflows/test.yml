@@ -1,0 +1,15 @@
+name: YAML Substitution Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: microsoft/variable-substitution@v1
+        with:
+          files: 'variables.yml'
+        env:
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
