@@ -13,3 +13,6 @@ jobs:
           files: 'variables.yml'
         env:
           azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          
+      - run: |
+          cat variables.yml
