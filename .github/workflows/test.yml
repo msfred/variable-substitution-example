@@ -4,10 +4,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  yaml-substitution-test:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+      
       - name: debug
         run: ls
     
