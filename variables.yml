@@ -1,1 +1,3 @@
-azure-subscription-id: this value was not overwritten
+some-secret: this value should get overwritten
+some-var: this value should get overwritten
+some-env: this value should get overwritten
